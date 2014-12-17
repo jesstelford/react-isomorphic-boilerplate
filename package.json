@@ -1,0 +1,22 @@
+{
+  "name": "server-side-react",
+  "version": "1.0.0",
+  "description": "Using React.js + Handlebars + Browserify to render your DOM server side while keeping React's awesomeness browser side too.",
+  "main": "./server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsx": "./node_modules/.bin/jsx common/components/ lib/components/",
+    "bundle": "./node_modules/.bin/browserify browser/index.js -d > public/js/bundle.js"
+  },
+  "author": "Jess Telford <hi@jes.st>",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^7.0.0",
+    "react-tools": "^0.12.1"
+  },
+  "dependencies": {
+    "express": "^4.10.4",
+    "handlebars": "^2.0.0",
+    "react": "^0.12.1"
+  }
+}
