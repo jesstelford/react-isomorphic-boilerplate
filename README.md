@@ -1,4 +1,4 @@
-# Server Side Rendering with React >= 0.12
+# Isomorphic Server & Browser Side Rendering with React >= 0.12
 
 **tl;dr**: Using React + Handlebars + Browserify to render your DOM server
 side while keeping React's awesomeness browser side too.
