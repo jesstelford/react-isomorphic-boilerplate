@@ -133,8 +133,9 @@ little to add whitespace):
 into the rendered output which is where React gets its magic from. From now on,
 should never have to worry about them other than to know they're important)*
 
-As React can't handle rendering `<!doctype>` tags, etc, we have to offload that
-layout rendering task to Handlebars. Here's our simple HTML5 template file:
+As React can't handle rendering `<!doctype>` tags, conditional comments (for
+targeting IE), etc, we have to offload that layout rendering task to Handlebars.
+Here's our simple HTML5 template file:
 
 ```html
 <!-- file: server/templates/layout.handlebars -->
