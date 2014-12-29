@@ -235,11 +235,6 @@ var TodoItemFactory = React.createFactory(TodoItem);
 
 var renderTarget = document.getElementById('content')
 
-React.render(
-  TodoItemFactory({done: false, name: 'Write Tutorial'}),
-  renderTarget
-);
-
 // Note the identical state to server/index.js
 var renderedComponent = React.render(
   TodoItemFactory({done: false, name: 'Write Tutorial'}),
