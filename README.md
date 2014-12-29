@@ -1,3 +1,6 @@
+*This is __Part 1__ of the series* "Modular Isomorphic React JS applications".
+*See [Part 2 here](https://github.com/jesstelford/react-testing-mocha-jsdom)*
+
 # Isomorphic Server & Browser Side Rendering with React >= 0.12
 
 **tl;dr**: Using React + Handlebars + Browserify to render your DOM server
