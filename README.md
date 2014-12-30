@@ -1,5 +1,6 @@
 *This is __Part 1__ of the series* "Modular Isomorphic React JS applications".
-*See [Part 2 here](https://github.com/jesstelford/react-testing-mocha-jsdom)*
+*See [Part 2](https://github.com/jesstelford/react-testing-mocha-jsdom) and
+[Part 3](https://github.com/jesstelford/react-testing-isomorphic) for more.*
 
 # Isomorphic Server & Browser Side Rendering with React >= 0.12
 
@@ -349,7 +350,10 @@ We're also using another concept called
 us to directly reference an internal React node within the rendered component.
 From this, we update the state using the DOM Node's `checked` attribute.
 
-To test that this works, you can wrap the contents of `browser/index.js` in a
-`setTimeout()` then inspect the state of `renderedComponent.state` after
+See [Part 3](https://github.com/jesstelford/react-testing-isormorphic) for unit
+testing this gotchya.
+
+To emulate this case yourself, you can wrap the contents of `browser/index.js`
+in a `setTimeout()` then inspect the state of `renderedComponent.state` after
 rendering. If you toggle the checkbox before the timeout, you should see the
 component's state has been updated intelligently upon render.
