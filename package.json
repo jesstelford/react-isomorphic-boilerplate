@@ -1,5 +1,6 @@
 {
   "name": "server-side-react",
+  "private": true,
   "version": "1.0.0",
   "description": "Using React.js + Handlebars + Browserify to render your DOM server side while keeping React's awesomeness browser side too.",
   "main": "./server/index.js",
