@@ -357,3 +357,7 @@ To emulate this case yourself, you can wrap the contents of `browser/index.js`
 in a `setTimeout()` then inspect the state of `renderedComponent.state` after
 rendering. If you toggle the checkbox before the timeout, you should see the
 component's state has been updated intelligently upon render.
+
+## Part 2
+
+Keep reading Part 2: [Unit testing React Components with Mocha + jsdom](https://github.com/jesstelford/react-testing-mocha-jsdom)
