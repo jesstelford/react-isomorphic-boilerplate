@@ -85,13 +85,13 @@ module.exports = React.createClass({
 
 Two important points to note here:
 
- 1. We're using CommonJS style `require`'s to include the `React` depenency. We
+ 1. We're using CommonJS style `require`'s to include the `React` dependency. We
     will keep this consistent throughout our code, and rely on Browserify to
     convert that into a browser-compatible version during build time. (See
     [Browser Side Rendering](#browser-side-rendering) below for more)
  2. We use `defaultChecked` instead of `checked` property as React would treat
-    `checked` as a static property that wont change again. The checkbox
-    *should* be changable, and so we only want to set the initial default.
+    `checked` as a static property that won't change again. The checkbox
+    *should* be changeable, and so we only want to set the initial default.
 
 Before we can use the component, we need to convert that JSX into JS using
 React's tooling:
@@ -276,7 +276,7 @@ Add the generated `public/js/bundle.js` to the template:
 
 Now, if we load up our example (with `node server/index.js`), the HTML will be
 rendered server side, and React will intelligently pick it up on the browser
-side witout disrupting the DOM (since the state hasn't changed).
+side without disrupting the DOM (since the state hasn't changed).
 
 Hurray!
 
@@ -286,7 +286,7 @@ Hurray!
 
 In `server/templates/layout.handlebars` note a lack of space between the `<div>`
 and the `<label>`. This is because when React checks for differences in the DOM,
-it will see a DOM TextNode consisting of just newline or space characters (eg;
+it will see a DOM TextNode consisting of just newline or space characters (e.g;
 `\n` or ` `) as a valid difference, and so will re-render the entire component.
 
 That is to say; given the following rendered DOM string:
