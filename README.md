@@ -358,6 +358,12 @@ in a `setTimeout()` then inspect the state of `renderedComponent.state` after
 rendering. If you toggle the checkbox before the timeout, you should see the
 component's state has been updated intelligently upon render.
 
+### The Checksum id changes
+
+Every time a React component is instantiated then rendered to string, you will receive a different `data-react-checksum`. This is expected behavior - the browser rendering does not rely solely on this id being the same.
+
+See more in [#3](https://github.com/jesstelford/react-isomorphic-boilerplate/issues/3).
+
 ## Part 2
 
 Keep reading Part 2: [Unit testing React Components with Mocha + jsdom](https://github.com/jesstelford/react-testing-mocha-jsdom)
